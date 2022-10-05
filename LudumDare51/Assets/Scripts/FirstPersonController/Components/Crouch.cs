@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 
 public class Crouch : MonoBehaviour
@@ -6,6 +7,7 @@ public class Crouch : MonoBehaviour
     public Transform head;
     [HideInInspector]
     public float defaultHeadYLocalPosition;
+    public float crouchTime = 0.2f;
 
     [Tooltip("Capsule collider to lower when we crouch.\nCan be empty.")]
     public CapsuleCollider capsuleCollider;
@@ -44,7 +46,7 @@ public class Crouch : MonoBehaviour
         if (IsKeyPressed(keys))
         {
             // Enforce crouched y local position of the head.
-            head.localPosition = new Vector3(head.localPosition.x, crouchYLocalPosition, head.localPosition.z);
+            StartCoroutine(LerpFunction(crouchYLocalPosition, crouchTime));
 
             // Lower the capsule collider.
             if (capsuleCollider)
@@ -63,7 +65,7 @@ public class Crouch : MonoBehaviour
         else if (IsCrouched)
         {
             // Reset the head to its default y local position.
-            head.localPosition = new Vector3(head.localPosition.x, defaultHeadYLocalPosition, head.localPosition.z);
+            StartCoroutine(LerpFunction(defaultHeadYLocalPosition, crouchTime));
 
             // Reset the capsule collider's position.
             if (capsuleCollider)
@@ -78,7 +80,6 @@ public class Crouch : MonoBehaviour
         }
     }
 
-
     static bool IsKeyPressed(KeyCode[] keys)
     {
         // Return true if any of the keys are down.
@@ -86,5 +87,20 @@ public class Crouch : MonoBehaviour
             if (Input.GetKey(keys[i]))
                 return true;
         return false;
+    }
+
+    IEnumerator LerpFunction(float endValue, float duration)
+    {
+        float time = 0;
+        float startValue = head.localPosition.y;
+
+        while (time < duration)
+        {
+            head.localPosition = new Vector3(head.localPosition.x, Mathf.Lerp(startValue, endValue, time / duration), head.localPosition.z);
+            time += Time.deltaTime;
+            yield return null;
+        }
+
+        head.localPosition = new Vector3(head.localPosition.x, endValue, head.localPosition.z);
     }
 }
