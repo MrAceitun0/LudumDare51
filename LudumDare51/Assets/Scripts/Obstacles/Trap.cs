@@ -1,10 +1,8 @@
 ﻿using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class Trap : MonoBehaviour
 {
-    Transform initialTransform;
     Respawner respawner;
 
     private void Start()
@@ -18,7 +16,16 @@ public class Trap : MonoBehaviour
         {
             GetComponentInChildren<ParticleSystem>().Play();
             respawner.setIsDead(true);
+            GetComponent<MeshRenderer>().enabled = false;
             StartCoroutine(respawner.respawnPlayer(other.transform));
+            StartCoroutine(deactivateRenderTemporaly());
         }
+    }
+
+    public IEnumerator deactivateRenderTemporaly()
+    {
+        GetComponent<MeshRenderer>().enabled = false;
+        yield return new WaitForSeconds(1f);
+        GetComponent<MeshRenderer>().enabled = true;
     }
 }
