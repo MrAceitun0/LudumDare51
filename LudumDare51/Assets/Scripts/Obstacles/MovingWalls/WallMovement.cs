@@ -19,7 +19,6 @@ public class WallMovement : MonoBehaviour
     {
         if(phase == closedPhase)
         {
-            Debug.Log(phase);
             closeDoor();
         } 
         else
