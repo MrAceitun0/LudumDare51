@@ -3,7 +3,7 @@ using UnityEngine;
 
 public class SplashArtScript : MonoBehaviour
 {
-
+    public float splashTime;
     MenuManagerScript menuManager;
 
     // Start is called before the first frame update
@@ -15,7 +15,7 @@ public class SplashArtScript : MonoBehaviour
 
     private IEnumerator goToMenu()
     {
-        yield return new WaitForSeconds(4f);
+        yield return new WaitForSeconds(splashTime);
         menuManager.loadScene("MainMenuScene");
     }
 }

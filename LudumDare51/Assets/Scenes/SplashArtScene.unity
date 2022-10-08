@@ -636,7 +636,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f5c7c31693652884fae74930ef551cef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  masterAudioMixer: {fileID: 0}
+  masterAudioMixer: {fileID: 24100000, guid: 5b78a61b87984b94cb4c6f111174586b, type: 2}
   resolutionDropdown: {fileID: 0}
   faderAnimator: {fileID: 1351692137}
 --- !u!4 &856455415
@@ -938,11 +938,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: SplashArt
       objectReference: {fileID: 0}
-    - target: {fileID: 1013005946555025156, guid: 9da8a73df96e9a24fb52905f16a21001,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 1013005946555025157, guid: 9da8a73df96e9a24fb52905f16a21001,
         type: 3}
       propertyPath: m_Pivot.x
@@ -1048,33 +1043,12 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 1013005946555025158, guid: 9da8a73df96e9a24fb52905f16a21001,
+    - target: {fileID: 2130101367508439724, guid: 9da8a73df96e9a24fb52905f16a21001,
         type: 3}
-      propertyPath: m_Color.a
-      value: 1
+      propertyPath: splashTime
+      value: 8
       objectReference: {fileID: 0}
-    - target: {fileID: 1013005946555025158, guid: 9da8a73df96e9a24fb52905f16a21001,
-        type: 3}
-      propertyPath: m_Color.b
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1013005946555025158, guid: 9da8a73df96e9a24fb52905f16a21001,
-        type: 3}
-      propertyPath: m_Color.g
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1013005946555025158, guid: 9da8a73df96e9a24fb52905f16a21001,
-        type: 3}
-      propertyPath: m_Color.r
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1013005946555025272, guid: 9da8a73df96e9a24fb52905f16a21001,
-        type: 3}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 1013005946555025272, guid: 9da8a73df96e9a24fb52905f16a21001, type: 3}
+    m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9da8a73df96e9a24fb52905f16a21001, type: 3}
 --- !u!1 &1903360830
 GameObject:
@@ -1102,8 +1076,9 @@ AudioSource:
   m_GameObject: {fileID: 1903360830}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: 24300002, guid: 5b78a61b87984b94cb4c6f111174586b,
+    type: 2}
+  m_audioClip: {fileID: 8300000, guid: 5d6cc3b724ff9124ab4a14752449f3c0, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
