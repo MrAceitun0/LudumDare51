@@ -450,6 +450,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Fader
       objectReference: {fileID: 0}
+    - target: {fileID: 8305208106607264180, guid: e0f1b1b22a16e614994656be69fca13d,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8305208106607264181, guid: e0f1b1b22a16e614994656be69fca13d,
         type: 3}
       propertyPath: m_Pivot.x
@@ -937,6 +942,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: SplashArt
+      objectReference: {fileID: 0}
+    - target: {fileID: 1013005946555025156, guid: 9da8a73df96e9a24fb52905f16a21001,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1013005946555025157, guid: 9da8a73df96e9a24fb52905f16a21001,
         type: 3}
