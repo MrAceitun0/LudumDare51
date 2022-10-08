@@ -4,6 +4,7 @@ using UnityEngine.Audio;
 using UnityEngine.UI;
 using System.Collections.Generic;
 using System;
+using System.Collections;
 
 public class MenuManagerScript : MonoBehaviour
 {
@@ -27,6 +28,13 @@ public class MenuManagerScript : MonoBehaviour
     public void loadScene(string sceneName)
     {
         faderAnimator.SetBool(IS_LOADING_SCREEN, true);
+        StartCoroutine(loadAfterFadeIn(sceneName));
+    }
+
+    IEnumerator loadAfterFadeIn(string sceneName)
+    {
+        yield return new WaitForSeconds(1f);
+
         SceneManager.LoadSceneAsync(sceneName);
     }
 
