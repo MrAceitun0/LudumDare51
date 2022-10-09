@@ -27,6 +27,7 @@ public class MenuManagerScript : MonoBehaviour
 
     public void loadScene(string sceneName)
     {
+        Time.timeScale = 1f;
         faderAnimator.SetBool(IS_LOADING_SCREEN, true);
         StartCoroutine(loadAfterFadeIn(sceneName));
     }
@@ -40,6 +41,7 @@ public class MenuManagerScript : MonoBehaviour
 
     public void exitGame()
     {
+        Time.timeScale = 1f;
         Application.Quit();
     }
 
