@@ -9,7 +9,7 @@ public class TenSecondsTimer : MonoBehaviour
 
     private int phaseCounter = 0;
 
-    private float phaseTime = 2f;
+    private float phaseTime = 10f;
     private float remainingTime;
 
     private void Start()
