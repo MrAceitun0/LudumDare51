@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class CharByCharRenderScript : MonoBehaviour
 {
+    public bool hasFinished = false;
 
     AudioSource audioSource;
     public AudioClip[] textBips;
@@ -16,6 +17,7 @@ public class CharByCharRenderScript : MonoBehaviour
     {
         textMeshProUGUI = GetComponent<TextMeshProUGUI>();
         textMeshProUGUI.text = "";
+        script.Replace("\\n", "<br><br>");
         scriptByWords = script.Split(' ');
 
         audioSource = GetComponent<AudioSource>();
@@ -28,12 +30,28 @@ public class CharByCharRenderScript : MonoBehaviour
         yield return new WaitForSeconds(2f);
         for (int i = 0; i < scriptByWords.Length; i++)
         {
-            textMeshProUGUI.text = string.Concat(textMeshProUGUI.text, scriptByWords[i] + " ");
+            if (!hasFinished)
+            {
 
-            int bipIndex = Random.Range(0, textBips.Length - 1);
-            audioSource.PlayOneShot(textBips[bipIndex]);
+                textMeshProUGUI.text = string.Concat(textMeshProUGUI.text, scriptByWords[i] + " ");
 
-            yield return new WaitForSeconds(0.1f);
+                int bipIndex = Random.Range(0, textBips.Length - 1);
+                audioSource.PlayOneShot(textBips[bipIndex]);
+
+                yield return new WaitForSeconds(0.1f);
+            }
         }
+
+        hasFinished = true;
+    }
+
+    public void showFullText()
+    {
+        textMeshProUGUI.text = script;
+
+        int bipIndex = Random.Range(0, textBips.Length - 1);
+        audioSource.PlayOneShot(textBips[bipIndex]);
+
+        hasFinished = true;
     }
 }

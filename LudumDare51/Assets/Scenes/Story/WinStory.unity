@@ -639,6 +639,50 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 495253372}
   m_CullTransparentMesh: 0
+--- !u!1 &669726046
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 669726047}
+  - component: {fileID: 669726048}
+  m_Layer: 0
+  m_Name: StoryManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &669726047
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 669726046}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &669726048
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 669726046}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2f428b7e89ca0f647aaaccc6e7f2b5cf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nextScene: MainMenuScene
 --- !u!1 &794346761
 GameObject:
   m_ObjectHideFlags: 0
@@ -1421,12 +1465,12 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Welcome again to <color="blue">Masters of Maze</color>.
-
-
-    Today we
-    are running our special annual show - the 10 Second Edition Championship in which
-    our contestants will try some of our most difficult mazes ever made in humanity.'
+  m_text: "We-We-Welcome Everyone at Masters of Maze 10 Seconds Edition. My name
+    is Eustache Bridle and I\u2019m gonna be your \u201Cmaster\u201D of ceremonies.
+    Join Us and Enjoy this amazing journey through 3 different tests. Will our participants
+    be able to win this time?<br><br>The rules are simple. Try to reach the end of
+    Each Maze without any harm and win. But here\u2019s the problem: Every 10 seconds
+    the Maze will change its walls and its routes. It\u2019s 10 times better."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 50cccfc8b91d5c741a48645aa1a80cea, type: 2}
   m_sharedMaterial: {fileID: 9055365901087540126, guid: 50cccfc8b91d5c741a48645aa1a80cea,
@@ -1454,14 +1498,14 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 35.85
-  m_fontSizeBase: 35.85
+  m_fontSize: 25.45
+  m_fontSizeBase: 25.45
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
-  m_HorizontalAlignment: 1
+  m_HorizontalAlignment: 8
   m_VerticalAlignment: 256
   m_textAlignment: 65535
   m_characterSpacing: 0
@@ -1516,6 +1560,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 782c259710d013146af365ae63e6cc71, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  hasFinished: 0
   textBips:
   - {fileID: 8300000, guid: c54cbf6c14fd85c4784d59534e220e79, type: 3}
   - {fileID: 8300000, guid: 707236c631a72ad48b474959ab5ab14b, type: 3}
@@ -1528,9 +1573,12 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 5fac39d4a72017d4c88b191bfbe7dbfe, type: 3}
   - {fileID: 8300000, guid: 1873935fbf2c0d64dba7eefd416700b4, type: 3}
   - {fileID: 8300000, guid: b50d846179de06444b7d2becb4d64ab1, type: 3}
-  script: Welcome again to <color="blue">Masters of Maze</color>.  Today we are running
-    our special annual show - the 10 Second Edition Championship in which our contestants
-    will try some of our most difficult mazes ever made in humanity.
+  script: "We-We-Welcome Everyone at Masters of Maze 10 Seconds Edition. My name
+    is Eustache Bridle and I\u2019m gonna be your \u201Cmaster\u201D of ceremonies.
+    Join Us and Enjoy this amazing journey through 3 different tests. Will our participants
+    be able to win this time?<br><br>The rules are simple. Try to reach the end of
+    Each Maze without any harm and win. But here\u2019s the problem: Every 10 seconds
+    the Maze will change its walls and its routes. It\u2019s 10 times better."
 --- !u!82 &1464701850
 AudioSource:
   m_ObjectHideFlags: 0

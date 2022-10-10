@@ -6,6 +6,8 @@ TagManager:
   tags:
   - Laser
   - Trap
+  - Diana
+  - Win
   layers:
   - Default
   - TransparentFX
