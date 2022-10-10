@@ -4,7 +4,7 @@ using UnityEngine;
 public class WallMovement : MonoBehaviour
 {
     [SerializeField]
-    int closedPhase;
+    bool[] isUp;
 
     [SerializeField]
     float closedDoorYValue;
@@ -15,9 +15,9 @@ public class WallMovement : MonoBehaviour
     [SerializeField]
     float movementTime;
 
-    public void moveWall(float phase)
+    public void moveWall(int phase)
     {
-        if(phase == closedPhase)
+        if(isUp[phase])
         {
             closeDoor();
         } 
