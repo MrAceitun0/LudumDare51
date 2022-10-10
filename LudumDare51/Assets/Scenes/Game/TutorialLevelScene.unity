@@ -1871,7 +1871,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a025ec8d7080f2343aa4bba88c113bf9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  closedPhase: 0
+  isUp: 
   closedDoorYValue: 3
   openDoorYValue: -3
   movementTime: 1
@@ -2212,7 +2212,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a025ec8d7080f2343aa4bba88c113bf9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  closedPhase: 0
+  isUp: 
   closedDoorYValue: 3
   openDoorYValue: -3
   movementTime: 1
@@ -3015,7 +3015,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a025ec8d7080f2343aa4bba88c113bf9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  closedPhase: 0
+  isUp: 
   closedDoorYValue: 3
   openDoorYValue: -3
   movementTime: 1
@@ -10703,7 +10703,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a025ec8d7080f2343aa4bba88c113bf9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  closedPhase: 0
+  isUp: 
   closedDoorYValue: 3
   openDoorYValue: -3
   movementTime: 1
@@ -12519,7 +12519,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a025ec8d7080f2343aa4bba88c113bf9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  closedPhase: 0
+  isUp: 
   closedDoorYValue: 3
   openDoorYValue: -3
   movementTime: 1
@@ -15708,7 +15708,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a025ec8d7080f2343aa4bba88c113bf9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  closedPhase: 0
+  isUp: 
   closedDoorYValue: 3
   openDoorYValue: -3
   movementTime: 1
@@ -16660,7 +16660,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a025ec8d7080f2343aa4bba88c113bf9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  closedPhase: 0
+  isUp: 
   closedDoorYValue: 3
   openDoorYValue: -3
   movementTime: 1
@@ -16838,7 +16838,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh16968
+  m_Name: pb_Mesh120642
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -17287,7 +17287,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a025ec8d7080f2343aa4bba88c113bf9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  closedPhase: 0
+  isUp: 
   closedDoorYValue: 3
   openDoorYValue: -3
   movementTime: 1
@@ -19472,7 +19472,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a025ec8d7080f2343aa4bba88c113bf9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  closedPhase: 0
+  isUp: 
   closedDoorYValue: 3
   openDoorYValue: -3
   movementTime: 1
@@ -21216,7 +21216,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a025ec8d7080f2343aa4bba88c113bf9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  closedPhase: 0
+  isUp: 
   closedDoorYValue: 3
   openDoorYValue: -3
   movementTime: 1
@@ -21797,7 +21797,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a025ec8d7080f2343aa4bba88c113bf9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  closedPhase: 0
+  isUp: 
   closedDoorYValue: 3
   openDoorYValue: -3
   movementTime: 1
@@ -22354,7 +22354,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a025ec8d7080f2343aa4bba88c113bf9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  closedPhase: 0
+  isUp: 
   closedDoorYValue: 3
   openDoorYValue: -3
   movementTime: 1
@@ -22651,7 +22651,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a025ec8d7080f2343aa4bba88c113bf9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  closedPhase: 0
+  isUp: 
   closedDoorYValue: 3
   openDoorYValue: -3
   movementTime: 1
@@ -23546,7 +23546,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a025ec8d7080f2343aa4bba88c113bf9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  closedPhase: 0
+  isUp: 
   closedDoorYValue: 3
   openDoorYValue: -3
   movementTime: 1
@@ -24064,7 +24064,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a025ec8d7080f2343aa4bba88c113bf9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  closedPhase: 0
+  isUp: 
   closedDoorYValue: 3
   openDoorYValue: -3
   movementTime: 1
@@ -25198,7 +25198,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a025ec8d7080f2343aa4bba88c113bf9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  closedPhase: 0
+  isUp: 
   closedDoorYValue: 3
   openDoorYValue: -3
   movementTime: 1
