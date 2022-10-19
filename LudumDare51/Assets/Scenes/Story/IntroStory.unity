@@ -1443,7 +1443,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: -21}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1464701847
@@ -1466,11 +1466,12 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_text: "We-We-Welcome Everyone at Masters of Maze 10 Seconds Edition. My name
-    is Eustache Bridle and I\u2019m gonna be your \u201Cmaster\u201D of ceremonies.
-    Join Us and Enjoy this amazing journey through 3 different tests. Will our participants
-    be able to win this time?<br><br>The rules are simple. Try to reach the end of
-    Each Maze without any harm and win. But here\u2019s the problem: Every 10 seconds
-    the Maze will change its walls and its routes. It\u2019s 10 times better."
+    is Eustache Bridle and I\u2019m gonna be your <color=#96FF00>master</color> of
+    ceremonies. Join Us and Enjoy this amazing journey through 3 different tests.
+    Will our participants be able to win this time?<br><br>The rules are simple.
+    Try to reach the end of Each Maze without any harm and win. But here\u2019s the
+    problem: Every 10 seconds the Maze will change its walls and its routes. It\u2019s
+    10 times better.\r"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 50cccfc8b91d5c741a48645aa1a80cea, type: 2}
   m_sharedMaterial: {fileID: 9055365901087540126, guid: 50cccfc8b91d5c741a48645aa1a80cea,
@@ -1498,14 +1499,14 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 25.45
-  m_fontSizeBase: 25.45
+  m_fontSize: 24.52
+  m_fontSizeBase: 24.52
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
-  m_HorizontalAlignment: 8
+  m_HorizontalAlignment: 1
   m_VerticalAlignment: 256
   m_textAlignment: 65535
   m_characterSpacing: 0
@@ -1574,11 +1575,12 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 1873935fbf2c0d64dba7eefd416700b4, type: 3}
   - {fileID: 8300000, guid: b50d846179de06444b7d2becb4d64ab1, type: 3}
   script: "We-We-Welcome Everyone at Masters of Maze 10 Seconds Edition. My name
-    is Eustache Bridle and I\u2019m gonna be your \u201Cmaster\u201D of ceremonies.
-    Join Us and Enjoy this amazing journey through 3 different tests. Will our participants
-    be able to win this time?<br><br>The rules are simple. Try to reach the end of
-    Each Maze without any harm and win. But here\u2019s the problem: Every 10 seconds
-    the Maze will change its walls and its routes. It\u2019s 10 times better."
+    is Eustache Bridle and I\u2019m gonna be your <color=#96FF00>master</color> of
+    ceremonies. Join Us and Enjoy this amazing journey through 3 different tests.
+    Will our participants be able to win this time?<br><br>The rules are simple.
+    Try to reach the end of Each Maze without any harm and win. But here\u2019s the
+    problem: Every 10 seconds the Maze will change its walls and its routes. It\u2019s
+    10 times better. "
 --- !u!82 &1464701850
 AudioSource:
   m_ObjectHideFlags: 0
