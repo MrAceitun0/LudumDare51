@@ -33,6 +33,7 @@ public class PauseMenuScript : MonoBehaviour
         isPaused = true;
         backgroundMusic.pitch = 0.5f;
         Cursor.lockState = CursorLockMode.None;
+        Cursor.visible = true;
     }
 
     private void Resume()
@@ -42,5 +43,6 @@ public class PauseMenuScript : MonoBehaviour
         isPaused = false;
         backgroundMusic.pitch = 1f;
         Cursor.lockState = CursorLockMode.Locked;
+        Cursor.visible = false;
     }
 }
