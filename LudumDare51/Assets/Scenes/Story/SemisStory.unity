@@ -1137,6 +1137,75 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &992094690
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 2619890794131437826, guid: 1c2874b5264e69c4e99f761c1b0e69f1,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 2619890794131437826, guid: 1c2874b5264e69c4e99f761c1b0e69f1,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 164.31644
+      objectReference: {fileID: 0}
+    - target: {fileID: 2619890794131437826, guid: 1c2874b5264e69c4e99f761c1b0e69f1,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 115.58273
+      objectReference: {fileID: 0}
+    - target: {fileID: 2619890794131437826, guid: 1c2874b5264e69c4e99f761c1b0e69f1,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 36.747444
+      objectReference: {fileID: 0}
+    - target: {fileID: 2619890794131437826, guid: 1c2874b5264e69c4e99f761c1b0e69f1,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2619890794131437826, guid: 1c2874b5264e69c4e99f761c1b0e69f1,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2619890794131437826, guid: 1c2874b5264e69c4e99f761c1b0e69f1,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2619890794131437826, guid: 1c2874b5264e69c4e99f761c1b0e69f1,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2619890794131437826, guid: 1c2874b5264e69c4e99f761c1b0e69f1,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2619890794131437826, guid: 1c2874b5264e69c4e99f761c1b0e69f1,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2619890794131437826, guid: 1c2874b5264e69c4e99f761c1b0e69f1,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4433831266181223453, guid: 1c2874b5264e69c4e99f761c1b0e69f1,
+        type: 3}
+      propertyPath: m_Name
+      value: Cursor
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 1c2874b5264e69c4e99f761c1b0e69f1, type: 3}
 --- !u!1 &1053986269
 GameObject:
   m_ObjectHideFlags: 0
@@ -1443,7 +1512,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: -11}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1464701847
@@ -1465,12 +1534,12 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "We-We-Welcome Everyone at Masters of Maze 10 Seconds Edition. My name
-    is Eustache Bridle and I\u2019m gonna be your \u201Cmaster\u201D of ceremonies.
-    Join Us and Enjoy this amazing journey through 3 different tests. Will our participants
-    be able to win this time?<br><br>The rules are simple. Try to reach the end of
-    Each Maze without any harm and win. But here\u2019s the problem: Every 10 seconds
-    the Maze will change its walls and its routes. It\u2019s 10 times better."
+  m_text: "Oh my, oh my. I can\u2019t believe it. You now understand how this works.
+    We will watch your run with great interest. In fact, we will watch EVERY Run
+    because everyone has passed the first level. I think I have to fire the designer.\r<br><br>I
+    hope you will find the next maze funnier than the last one. We have put all of
+    our effort into creating the most mastery Experience. Be ready to get Dazzled
+    and Confused.\r"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 50cccfc8b91d5c741a48645aa1a80cea, type: 2}
   m_sharedMaterial: {fileID: 9055365901087540126, guid: 50cccfc8b91d5c741a48645aa1a80cea,
@@ -1505,7 +1574,7 @@ MonoBehaviour:
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
-  m_HorizontalAlignment: 8
+  m_HorizontalAlignment: 1
   m_VerticalAlignment: 256
   m_textAlignment: 65535
   m_characterSpacing: 0
@@ -1573,12 +1642,12 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 5fac39d4a72017d4c88b191bfbe7dbfe, type: 3}
   - {fileID: 8300000, guid: 1873935fbf2c0d64dba7eefd416700b4, type: 3}
   - {fileID: 8300000, guid: b50d846179de06444b7d2becb4d64ab1, type: 3}
-  script: "We-We-Welcome Everyone at Masters of Maze 10 Seconds Edition. My name
-    is Eustache Bridle and I\u2019m gonna be your \u201Cmaster\u201D of ceremonies.
-    Join Us and Enjoy this amazing journey through 3 different tests. Will our participants
-    be able to win this time?<br><br>The rules are simple. Try to reach the end of
-    Each Maze without any harm and win. But here\u2019s the problem: Every 10 seconds
-    the Maze will change its walls and its routes. It\u2019s 10 times better."
+  script: "Oh my, oh my. I can\u2019t believe it. You now understand how this works.
+    We will watch your run with great interest. In fact, we will watch EVERY Run
+    because everyone has passed the first level. I think I have to fire the designer.
+    <br><br>I hope you will find the next maze funnier than the last one. We have
+    put all of our effort into creating the most mastery Experience. Be ready to
+    get Dazzled and Confused. "
 --- !u!82 &1464701850
 AudioSource:
   m_ObjectHideFlags: 0

@@ -8,6 +8,10 @@ public class Win : MonoBehaviour
 
     MenuManagerScript menuManager;
 
+    public MeshRenderer pilar;
+    public MeshRenderer floor;
+    public Material winMaterial;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -19,6 +23,10 @@ public class Win : MonoBehaviour
         if (other.tag == "Win")
         {
             other.GetComponent<AudioSource>().Play();
+
+            pilar.material = winMaterial;
+            floor.material = winMaterial;
+
             ParticleSystem[] confettis = other.GetComponentsInChildren<ParticleSystem>();
             for (int i = 0; i < confettis.Length; i++){
                 confettis[i].Play();
