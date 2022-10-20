@@ -102,7 +102,7 @@ Camera:
     y: 0
     width: 1
     height: 1
-  near clip plane: 0.3
+  near clip plane: 0.01
   far clip plane: 1000
   field of view: 60
   orthographic: 0
@@ -168,6 +168,7 @@ GameObject:
   - component: {fileID: 114497868231759342}
   - component: {fileID: 6666154246740692429}
   - component: {fileID: 114762042097486276}
+  - component: {fileID: 834284573}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -260,7 +261,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8d6ee7b14cedfc244b543740aa304b9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nextScene: 
+  nextScene: SemisStory
+  pilar: {fileID: 0}
+  floor: {fileID: 0}
+  winMaterial: {fileID: 0}
 --- !u!114 &114762042097486276
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -273,7 +277,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 27b67ddb3d23b8340b125aede56d7e8c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  crouchYLocalPosition: 1
+  crouchYLocalPosition: 0.5
   head: {fileID: 4490257326247362}
   defaultHeadYLocalPosition: 0
   crouchTime: 0.2
@@ -281,3 +285,15 @@ MonoBehaviour:
   defaultCapsuleColliderHeight: 0
   groundCheck: {fileID: 114503055206606986}
   keys: 3201000031010000
+--- !u!114 &834284573
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1773623360729482}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 87982e0639c242345b5eff9423960002, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

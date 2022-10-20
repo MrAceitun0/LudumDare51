@@ -7936,49 +7936,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 114762042097486276, guid: 11aaea5348574644a9eb4f4504fcce3f,
-        type: 3}
-      propertyPath: crouchYLocalPosition
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 6666154246740692429, guid: 11aaea5348574644a9eb4f4504fcce3f,
-        type: 3}
-      propertyPath: nextScene
-      value: SemisStory
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 11aaea5348574644a9eb4f4504fcce3f, type: 3}
---- !u!1 &834284565 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1773623360729482, guid: 11aaea5348574644a9eb4f4504fcce3f,
-    type: 3}
-  m_PrefabInstance: {fileID: 834284564}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &834284566
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 834284565}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8527e95d30283db42bb858fb5209539f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  deathLimitY: -5
---- !u!114 &834284573
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 834284565}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 87982e0639c242345b5eff9423960002, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &849928541
 GameObject:
   m_ObjectHideFlags: 0
