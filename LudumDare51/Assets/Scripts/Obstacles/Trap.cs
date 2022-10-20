@@ -15,6 +15,7 @@ public class Trap : MonoBehaviour
         if (other.tag == "Player")
         {
             GetComponentInChildren<ParticleSystem>().Play();
+            GetComponent<AudioSource>().Play();
             respawner.setIsDead(true);
             GetComponent<MeshRenderer>().enabled = false;
             StartCoroutine(respawner.respawnPlayer(other.transform));
