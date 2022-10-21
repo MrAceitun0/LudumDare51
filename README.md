@@ -3,7 +3,7 @@
 This is the repository containing the Unity Project and Source Code for the Masters of Maze game developed for the Ludum Dare 51.
 The game can be played both in 
 * [itch.io](https://mraceituno.itch.io/masters-of-maze)
-* [ldjam.com]()
+* [ldjam.com](https://ldjam.com/events/ludum-dare/51/masters-of-maze)
 
 A game developed by:
 
