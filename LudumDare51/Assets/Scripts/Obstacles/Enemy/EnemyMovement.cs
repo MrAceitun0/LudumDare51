@@ -24,7 +24,11 @@ public class EnemyMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (respawner.getIsDead() || !playerDetector.getIsPlayerDetected())
+        if (respawner.getIsDead())
+        {
+            transform.position = initialPosition;
+        }
+        if ( !playerDetector.getIsPlayerDetected())
         {
             enemyMesh.SetDestination(initialPosition);
         } else

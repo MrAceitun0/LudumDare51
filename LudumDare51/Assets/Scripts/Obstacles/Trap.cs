@@ -5,9 +5,12 @@ public class Trap : MonoBehaviour
 {
     Respawner respawner;
 
+    Transform initialTransform;
+
     private void Start()
     {
         respawner = FindObjectOfType<Respawner>();
+        initialTransform = this.transform;
     }
 
     private void OnTriggerEnter(Collider other)
