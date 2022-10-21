@@ -26,7 +26,7 @@ public class EnemyMovement : MonoBehaviour
     {
         if (respawner.getIsDead())
         {
-            transform.position = initialPosition;
+            StartCoroutine(respawnEnemy());
         }
         if ( !playerDetector.getIsPlayerDetected())
         {
