@@ -23401,7 +23401,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a025ec8d7080f2343aa4bba88c113bf9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isUp: 000001
+  isUp: 000101
   closedDoorYValue: 3
   openDoorYValue: -3
   movementTime: 1
