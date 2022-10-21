@@ -10,9 +10,12 @@ public class MenuManagerScript : MonoBehaviour
 {
     private const string VOLUME = "volume";
     public AudioMixer masterAudioMixer;
+    public Slider volumeSlider;
 
     List<Resolution> availableResolutions;
     public Dropdown resolutionDropdown;
+
+    public Toggle fullscreenToggle;
 
     private const string IS_LOADING_SCREEN = "isLoadingScreen";
     public Animator faderAnimator;
@@ -22,6 +25,12 @@ public class MenuManagerScript : MonoBehaviour
         if (resolutionDropdown)
         {
             getAvailableResolutions();
+
+            float volumeValue = 0f;
+            masterAudioMixer.GetFloat(VOLUME, out volumeValue);
+            volumeSlider.value = volumeValue;
+
+            fullscreenToggle.isOn = Screen.fullScreen;
         }
     }
 
@@ -50,8 +59,20 @@ public class MenuManagerScript : MonoBehaviour
         masterAudioMixer.SetFloat(VOLUME, volume);
     }
 
-    public void setQuality(int qualityIndex)
+    public void setQuality(string quality)
     {
+        int qualityIndex = 2;
+
+        if(quality == "LOW")
+        {
+            qualityIndex = 0;
+        }
+
+        if(quality == "MEDIUM")
+        {
+            qualityIndex = 1;
+        }
+
         QualitySettings.SetQualityLevel(qualityIndex);
     }
 
